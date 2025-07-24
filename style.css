@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #350569;
+}
+.holdcontainer{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+    gap: 5vw;
+    color: white;
+    font-size: 1.2rem;
+}
+.theme{
+      height: 60vh;
+    width: 30vw;
+    background: linear-gradient(to bottom, #350569, #1a0044);
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    
+    border: none;
+    border-radius: 1vw;
+    display: flex;
+    
+    flex-direction: column;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+
+    
+    
+
+}
+.timer{
+    display: flex;
+}
+.score{
+    display: flex;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btn{
+    background-color: rgb(11, 16, 65);
+    height: 4.5vh;
+    width: 6vw;
+    font-size: 1rem;
+    color: white;
+}
+.btn:hover{
+   cursor: pointer;
+   background-color: rgb(44, 6, 107);
+}
+.heading{
+    font-size: 2rem;
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.option {
+  background: #eee;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.correct {
+  background-color: #a0e7a0;
+}
+
+.incorrect {
+  background-color: #f28b82;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+.question{
+    font-size: 1.5rem;
+    display: flex;
+ align-items: center;
+ justify-content: center;
+ color: white;    
+}
+@media screen  and (max-width:1000px){
+    .theme{
+        width: 70vw;
+    
+    }
+    .heading{
+        width: 100%;
+        font-size: 2rem;
+    margin: 0;
+    }
+    .container1{
+        gap: 0;
+    }
+    .btn{
+        width: 20vw;
+    }
+    
+}
+
+@media screen and (max-width:1200px){
+    .theme{
+        height: 50vh;
+        width: 50vw;
+    }
+
+}
+@media screen and (max-width:680px){
+    .theme{
+        height: 50vh;
+        width: 97%;
+    }
+    .btn{
+        width: 30vw;
+        height: 4vh;
+    }
+}
